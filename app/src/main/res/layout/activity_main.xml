@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainRecycleView"
         android:layout_width="265dp"
         android:layout_height="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
