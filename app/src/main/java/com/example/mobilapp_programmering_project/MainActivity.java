@@ -1,7 +1,10 @@
 package com.example.mobilapp_programmering_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import android.widget.Toolbar;
 import com.google.gson.Gson;
@@ -48,5 +51,14 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         RecyclerView view = findViewById(R.id.mainRecycleView);
         view.setLayoutManager(new LinearLayoutManager(this));
         view.setAdapter(adapter);
+
+        Button buttonGoAbout = findViewById(R.id.buttonAbout);
+        buttonGoAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent screenIntent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(screenIntent);
+            }
+        });
     }
 }
