@@ -10,6 +10,14 @@
         android:layout_height="wrap_content"
         android:text="ItemTemplate"
         android:layout_margin="5dp"
-        android:gravity="center"
+        android:gravity="left"
+        />
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ItemTemplate"
+        android:layout_margin="5dp"
+        android:gravity="right"
         />
 </LinearLayout>

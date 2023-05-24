@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         List<Wonder> WonderList = gson.fromJson(json, type);
 
         for (Wonder m: WonderList) {
-            items.add(new RecycleItems(m.getName()));
+            items.add(new RecycleItems(m.getName(), m.getPlace()));
+
         }
         RecycleAdapter adapter = new RecycleAdapter(this, items, new RecycleAdapter.OnClickListener() {
             @Override

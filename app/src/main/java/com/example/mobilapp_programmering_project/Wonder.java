@@ -5,12 +5,16 @@ import com.google.gson.annotations.SerializedName;
 public class Wonder {
     private String name;
     private String ID;
+    @SerializedName("location")
+    private String place;
     private int size;
 
-    public Wonder(String name, String ID, int size) {
+    public Wonder(String name, String ID, String place, int size) {
         this.name = name;
         this.ID = ID;
         this.size = size;
+
+        this.place = place;
     }
 
     public String getName() {
@@ -29,6 +33,14 @@ public class Wonder {
         this.ID = ID;
     }
 
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
     public int getSize() {
         return size;
     }
@@ -42,6 +54,7 @@ public class Wonder {
         return "Wonder{" +
                 "name='" + name + '\'' +
                 ", ID='" + ID + '\'' +
+                ", ID='" + place + '\'' +
                 ", size=" + size +
                 '}';
     }
