@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Mobilapp-programmering-project</string>
     <string name="about">About</string>
+    <string name="aboutTxt">Denna sida är riktad mot dem som är intresserade av vad de 7 antika världens under är. Appen visar upp en lista med alla antika under som användare kan scrolla igenom.
+</string>
 </resources>
